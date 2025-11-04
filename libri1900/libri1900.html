@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Libri 1900</title>
+        <link rel="stylesheet" href=".css/styles.css">
+        <link rel="stylesheet" href="css/menu.css">
+    </head>
+    <style>
+        body{background-color: whitesmoke;}
+        a:link,a:visited{
+        text-decoration: none;
+     color:blue;
+     font-weight: bold;
+    }
+
+    a:link,a:visited{
+        text-decoration: none;
+        color:blue;
+        font-weight: bold;
+    }
+    a:hover{color:white}
+  
+    nav {
+            display: flex; /* Usa Flexbox per allineare gli elementi */
+            justify-content: left; /* Centra gli elementi orizzontalmente */
+            
+        }
+    nav a{color:blue;padding: 10px 18px;
+            font-size: 18px;
+            white-space: nowrap;
+            display: block;}
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        padding:0;
+        margin:0;
+     
+    }
+    nav li {
+            padding: 5px;
+        }
+      
+    nav a:link,a:visited{
+        
+        color: white;
+        padding:10px 18px;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        display: flex;
+        background-color: darkblue;
+    }
+    ul{color:darkblue}
+    .sfondo{width: 1480px;height: 900px;background-repeat: no-repeat;background-image: url("sfondo/sfondo2.jpg");background-size:cover;}
+    .indirizzo{background-color: blue;margin-top: 700px;}
+    footer{font-size: 1.5rem;}
+    @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+                margin: 10px 0;
+            }
+
+            nav {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            nav ul {
+                flex-direction: row;
+                width: 100%;
+                display: flex;
+            }
+
+            nav li {
+                padding: 10px;
+            }
+
+            nav a:link, nav a:visited {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            nav a:link, nav a:visited {
+                font-size: 1rem;
+                padding: 8px;
+            }
+        }
+    .libri1900 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            color:darkblue;
+        }
+        .libri1900 img {
+            width: 310px;
+            height: 340px;
+            padding: 10px 18px;
+        }
+        .libri1900 nav ul {
+            flex-wrap: wrap;
+        }
+        .libri1900 nav li {
+            margin-bottom: 10px;
+        }
+        .backli{background-color: darkblue;}
+
+    /* Stili per dispositivi mobili */
+    @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        /* Stili per tablet */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+
+        /* Stili per desktop */
+        @media (min-width: 1025px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+    </style>    
+    <body> 
+        <div class="backli">
+            <nav>
+                <ul >
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="libri1800.html">Libri 1800</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="libri1900">
+                <div>
+                    <img src="libri1900/saturnotre.jpg" alt="Saturno Tre">
+                    <nav>
+                        <ul>
+                            <li><a href="descrizione/saturnotre.html">Urania- Saturno Tre</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <img src="libri1900/pianetaproibito.jpg" alt="Pianeta Proibito">
+                    <nav>
+                        <ul>
+                            <li><a href="descrizione/pianetaproibito.html">Urania- Pianeta Proibito</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <img src="libri1900/segnaligiove.jpg" alt="Segnali da Giove">
+                    <nav>
+                        <ul>
+                            <li><a href="descrizione/segnaligiove.html">Urania- Segnali da Giove</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <img src="libri1900/chicera.jpg" alt="Chi c'era prima di noi">
+                    <nav>
+                        <ul>
+                            <li><a href="descrizione/chicera.html">Urania- Chi c'era prima di noi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <img src="libri1900/scheletroimpo.jpg" alt="Scheletro Impossibile">
+                    <nav>
+                        <ul>
+                            <li><a href="descrizione/scheletroimpo.html">Urania- Scheletro Impossibile</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <img src="libri1900/fognechi.jpg" alt="Dalle Fogne di Chicago">
+                    <nav>
+                        <ul>
+                            <li><a href="descrizione/fognechicago.html">Urania- Dalle Fogne di Chicago</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <img src="libri1900/desertoacqua.jpg" alt="Deserto d'Acqua">
+                    <nav>
+                        <ul>
+                            <li><a href="descrizione/desertoacqua.html">Urania- Deserto d'Acqua</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <img src="libri1900/condominium.jpg" alt="Condominium">
+                    <nav>
+                        <ul>
+                            <li><a href="descrizione/condominium.html">Urania- Condominium</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </body>
+    
+</html>
