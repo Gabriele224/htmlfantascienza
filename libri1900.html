@@ -9,10 +9,31 @@
     </head>
     <style>
         body{background-color: whitesmoke;}
+        .titolo{
+            font-size: 0.6rem;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        a{
+            border: 1px;
+            border-radius: 10px 10px 10px 10px;
+            
+        }
         a:link,a:visited{
         text-decoration: none;
-     color:blue;
-     font-weight: bold;
+        color:blue;
+        font-weight: bold;
+        font-size: 10px;
     }
 
     a:link,a:visited{
@@ -21,16 +42,18 @@
         font-weight: bold;
     }
     a:hover{color:white}
-  
+    
     nav {
             display: flex; /* Usa Flexbox per allineare gli elementi */
-            justify-content: left; /* Centra gli elementi orizzontalmente */
+            justify-content: center; /* Centra gli elementi orizzontalmente */
             
         }
     nav a{color:blue;padding: 10px 18px;
-            font-size: 18px;
+            font-size: 10px;
             white-space: nowrap;
-            display: block;}
+            display: block;
+            }
+            
     nav ul{
         display: flex;
         list-style-type: none;
@@ -39,17 +62,19 @@
      
     }
     nav li {
-            padding: 5px;
+            padding: 15px;
+            
         }
       
     nav a:link,a:visited{
         
         color: white;
         padding:10px 18px;
-        font-size: 1.5rem;
+        font-size: 1rem;
         white-space: nowrap;
         display: flex;
         background-color: darkblue;
+        
     }
     ul{color:darkblue}
     .sfondo{width: 1480px;height: 900px;background-repeat: no-repeat;background-image: url("sfondo/sfondo2.jpg");background-size:cover;}
@@ -95,8 +120,9 @@
     .libri1900 {
             display: flex;
             flex-wrap: wrap;
-            margin: 20px;
+            margin: 120px auto 40px auto;
             color:darkblue;
+            max-width: 1200px;
         }
         .libri1900 img {
             width: 310px;
@@ -157,13 +183,8 @@
         }
     </style>    
     <body> 
-        <div class="backli">
-            <nav>
-                <ul >
-                    <li><a href="index.html" >HOME</a></li>
-                    <li><a href="libri1800.html">Libri 1800</a></li>
-                </ul>
-            </nav>
+        <div class="titolo">
+            <h1>Libri 1900</h1>
             </div>
             <div class="libri1900">
                 <div>
