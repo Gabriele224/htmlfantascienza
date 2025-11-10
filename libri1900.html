@@ -82,9 +82,10 @@
         .libri1900 {
                 display: flex;
                 flex-wrap: wrap;
-                margin: 120px auto 40px auto;
+                margin: 60px auto 20px auto;
                 color:darkblue;
                 max-width: 1200px;
+
         }
 
         .libri1900 div{
@@ -105,12 +106,28 @@
         .libri1900 nav li {
             margin-bottom: 10px;
         }
+	.periodo {
+	   border:2px solid darkblue;
+	   border-radius:10px;
+	   color:white;
+	   background-color:darkblue;
+	   text-align: center;
+           padding: 6px 12px;
+           width:15%;
+           position: relative; /* o absolute se vuoi posizionarlo fisso */
+    	   margin: 120px auto 20px auto; /* lo centra e lo separa dal titolo */
+    	   font-size: 15px;
 
+	}
     </style>    
     <body> 
         <div class="titolo">
             <h1>Libri 1900</h1>
-            </div>
+        </div>
+	
+	<div class="periodo">
+	     <h3>1950</h3>
+	</div>
             <div class="libri1900">
                 <div>
                     <img src="libri1900/saturnotre.jpg" alt="Saturno Tre">
