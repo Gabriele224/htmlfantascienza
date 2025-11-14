@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catalogo- 2000</title>
+    </head>
+    <style>
+        body{background-color: whitesmoke;}
+        .titolo{
+            font-size: 0.6rem;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        a{
+            border: 1px;
+            border-radius: 10px 10px 10px 10px;
+            
+        }
+        a:link,a:visited{
+        text-decoration: none;
+        color:blue;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+        a:link,a:visited{
+        text-decoration: none;
+        color:blue;
+        font-weight: bold;
+    }
+        a:hover{color:white}
+    
+        nav {
+                display: flex; /* Usa Flexbox per allineare gli elementi */
+                justify-content: center; /* Centra gli elementi orizzontalmente */
+                
+            }
+        nav a{color:blue;padding: 10px 18px;
+                font-size: 10px;
+                white-space: nowrap;
+                display: block;
+                }
+                
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            padding:0;
+            margin:0;
+        
+        }
+        nav li {
+                padding: 15px;
+                
+            }
+        
+        nav a:link,a:visited{
+            
+            color: white;
+            padding:10px 18px;
+            font-size: 1rem;
+            white-space: nowrap;
+            display: flex;
+            background-color: darkblue;
+            
+        }
+        ul{color:darkblue}
+        
+        .indirizzo{background-color: blue;margin-top: 700px;}
+        footer{font-size: 1.5rem;}
+    
+        .libri2000 {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 60px auto 20px auto;
+                color:darkblue;
+                max-width: 1200px;
+
+        }
+
+        .libri2000 div{
+            margin: 20px;
+        }
+        .libri2000 img {
+            width: 310px;
+            height: 345px;
+            padding: 0; /* Ridotto leggermente per bilanciare il bordo */
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white; /* Aggiunge contrasto se lo sfondo è chiaro */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Effetto più elegante */
+        }
+        .libri2000 nav ul {
+            flex-wrap: wrap;
+        }
+        .libri2000 nav li {
+            margin-bottom: 10px;
+        }
+	.periodo {
+	   border:2px solid darkblue;
+	   border-radius:10px;
+	   color:white;
+	   background-color:darkblue;
+	   text-align: center;
+           padding: 3px 6px;
+           width:10%;
+           position: relative; /* o absolute se vuoi posizionarlo fisso */
+    	   margin: 100px auto 20px auto; /* lo centra e lo separa dal titolo */
+    	   font-size: 15px;
+
+	}
+    </style>    
+    <body> 
+        <div class="titolo">
+            <h1>Libri 2000</h1>
+        </div>
+	
+	<div class="periodo">
+	     <h3>2000</h3>
+	</div>
+            <div class="libri2000">
+	        <div>
+                    <img src="libri2000/l'uomodimarte.jpg" alt="l'uomodimarte">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Urania- L'Uomo Di Marte</a></li>
+                        </ul>
+                    </nav>
+                </div>
+		
+		<div>
+                    <img src="libri2000/the100day21.jpg" alt="The 100 Day 21">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Urania- The 100 Day 21</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <img src="libri2000/primacittasullaluna.jpg" alt="Artemis">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Urania- Artemis</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div>
+                    <img src="libri2000/projecthailmary.jpg" alt="Project Hail Mary">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Urania- Project Hail Mary</a></li>
+                        </ul>
+                    </nav>
+                </div>
+               	
+	   </div>
+		
+    </body>
+    
+</html>
