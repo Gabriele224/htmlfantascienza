@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <style>
+        body{background-color: whitesmoke;}
+        .titolo{
+            font-size: 0.6rem;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+         }
+        a{
+            border: 1px;
+            border-radius: 10px 10px 10px 10px;
+            
+        }
+        a:link,a:visited{
+        text-decoration: none;
+        color:blue;
+        font-weight: bold;
+        font-size: 20px;
+	
+    	}
+
+        a:link,a:visited{
+        text-decoration: none;
+        color:blue;
+        font-weight: bold;
+    	}
+        a:hover{
+	  color:white
+	}
+        
+        .a1900{
+	  position:relative;
+          top: 33px;
+	  opacity: 10;
+          color: black;
+	}
+    
+        nav {
+                display: flex; /* Usa Flexbox per allineare gli elementi */
+                justify-content: center; /* Centra gli elementi orizzontalmente */
+                
+            }
+        nav a{color:blue;padding: 10px 18px;
+                font-size: 20px;
+                white-space: nowrap;
+                display: block;
+                }
+                
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            padding:0;
+            margin:0;
+        
+        }
+        nav li {
+                padding: 15px;
+	        height:100px;
+                
+            }
+        
+        nav a:link,a:visited{
+            
+            color: black;
+            padding:10px 18px;
+            font-size: 1.5rem;
+            white-space: nowrap;
+            display: flex;
+            background-color: white;
+	    
+            
+        }
+        ul{color:darkblue}
+        
+            
+        .librohome {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 80px auto 40px auto;
+                color:darkblue;
+                max-width: 600px;
+
+        }
+
+        .librohome div{
+            margin: 20px;
+        }
+        .librohome img {
+            width: 270px;
+            height: 360px;
+            padding: 0; /* Ridotto leggermente per bilanciare il bordo */
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white; /* Aggiunge contrasto se lo sfondo è chiaro */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Effetto più elegante */
+        }
+        .librohome nav ul {
+            flex-wrap: wrap;
+        }
+        .librohome nav li {
+            margin-bottom: 10px;
+        }
+	
+	.card img {
+    	    display: block;
+            margin: 0 auto;
+        }
+	.card {
+            position: relative;
+            width: 270px;
+            margin: 0 auto; /* centramento */
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .card:hover {
+            transform: scale(1.02); /* leggero ingrandimento al passaggio */
+        }
+        
+        .card .descrizione {
+            position: absolute;
+            top: 120px;
+    	    bottom: 0;
+    	    color: black;
+    	    background-color:white;
+    	    width: 270px;
+            height: 100px;
+    	    text-align: center;
+     	    padding: 10px 0;
+    	    opacity: 0;
+     	    font-weight: bold;
+    	    border:2px solid white;
+    	    border-radius: 10px 5px 10px;
+
+    	    display:flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    flex-direction: column;
+        }
+        
+        .card:hover .descrizione {
+            opacity: 0.6;
+        }
+    </style>    
+    <body> 
+        <div class="titolo">
+            <h1>Fantascienza Web</h1>
+        </div>
+	
+	    <div class="librohome">
+		<div class="card">
+            	     <div class="descrizione">
+			<nav>
+                           <ul>
+                             <li><a class="a1900" href="libri1900.html">1900</a></li>
+                           </ul>
+                        </nav></div>
+	             <div>
+                        <img src="./librohome/home1900.jpg" alt="1900">
+		    
+                    
+                     </div>
+ 
+	   </div>
+
+    </body>
+    
+</html>
