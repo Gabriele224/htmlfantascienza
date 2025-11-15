@@ -90,25 +90,38 @@
         
             
         .librohome {
+                
                 display: flex;
+		justify-content: center;
                 flex-wrap: wrap;
-                margin: 80px auto 40px auto;
+                margin: 100px auto 40px auto;
                 color:darkblue;
-                max-width: 600px;
+                max-width: 1200px;
 
         }
 
         .librohome div{
             margin: 20px;
         }
+        .librohome .card {
+            margin: 20px;
+            width: 330px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
         .librohome img {
-            width: 270px;
-            height: 360px;
-            padding: 0; /* Ridotto leggermente per bilanciare il bordo */
+            width: 330px;
+            height: auto;
             border: 2px solid black;
             border-radius: 10px;
-            background-color: white; /* Aggiunge contrasto se lo sfondo è chiaro */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Effetto più elegante */
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
         }
         .librohome nav ul {
             flex-wrap: wrap;
@@ -117,13 +130,14 @@
             margin-bottom: 10px;
         }
 	
+	
 	.card img {
     	    display: block;
             margin: 0 auto;
         }
 	.card {
             position: relative;
-            width: 270px;
+            width: 330px;
             margin: 0 auto; /* centramento */
             display: block;
             margin-top: 50px;
@@ -145,7 +159,7 @@
     	    bottom: 0;
     	    color: black;
     	    background-color:white;
-    	    width: 270px;
+    	    width: 330px;
             height: 100px;
     	    text-align: center;
      	    padding: 10px 0;
@@ -166,24 +180,52 @@
     </style>    
     <body> 
         <div class="titolo">
-            <h1>Fantascienza Web</h1>
+            <h1>LibriVerso</h1>
         </div>
-	
-	    <div class="librohome">
+	    
+            <div class="librohome">
+		<div class="card">
+            	     <div class="descrizione">
+			<nav>
+                           <ul>
+                             <li><a class="a1900" href="libri1800.html">1800</a></li>
+                           </ul>
+                        </nav>
+	             </div>
+                        <img src="./librohome/home1800.jpg" alt="1800">		    
+                    
+                </div> 
+
 		<div class="card">
             	     <div class="descrizione">
 			<nav>
                            <ul>
                              <li><a class="a1900" href="libri1900.html">1900</a></li>
                            </ul>
-                        </nav></div>
-	             <div>
+                        </nav>
+	             </div>
+		     <div>
                         <img src="./librohome/home1900.jpg" alt="1900">
+		    </div>
+                    
+             	</div>
+	              
+		<div class="card">
+            	     <div class="descrizione">
+			<nav>
+                           <ul>
+                             <li><a class="a1900" href="libri2000.html">2000</a></li>
+                           </ul>
+                        </nav>
+		      </div>
+	              <div>
+                        <img src="./librohome/home2000.jpg" alt="2000">
 		    
                     
-                     </div>
+                      </div>
+	           </div>
  
-	   </div>
+	       </div>
 
     </body>
     
